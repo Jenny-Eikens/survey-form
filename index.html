@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>My first survey form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="survey form">
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+
+  <body>
+   
+    <h1 id="title">Jenny's Survey Form</h1>
+    <p id="description">Thank you for taking the time to review our platform</p>
+   
+    <form id="survey-form">
+     
+      <fieldset>
+        <label for="name" id="name-label">Name
+          <input class="bio" id="name" name="name" type="text" placeholder="Enter your name" required>
+        </label>
+        <label for="email" id="email-label">E-Mail
+          <input class="bio" id="email" name="email" type="email" placeholder="Enter your e-mail" required>
+        </label>
+        <label for="number" id="number-label">Age (optional)
+          <input class="bio" id="number" name="age" type="number" min="14" max="110" placeholder="Age">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">How did you hear about us?
+          <select name="dropdown" id="dropdown"> 
+            <option value="select">(Please select one)</option>
+            <option value="soc-med">Social media</option>
+            <option value ="ad">Advertisement</option>
+            <option value="fr-fam">Friends/family</option>
+            <option value="other">Other</option>
+          </select>
+        </label> 
+      </fieldset>
+
+      <fieldset>
+        <legend>Are you satisfied with our services?</legend>
+          <label>
+            <input class="buttons" type="radio" name="satisfaction" value="yes" checked>Yes
+          </label>
+          <label>
+            <input class="buttons" type="radio" name="satisfaction" value="no">No
+          </label>
+           <label>
+            <input class="buttons" type="radio" name="satisfaction" value="undecided">Can't say
+          </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What are your favorite features of our platform? (Select all that apply)</legend>
+          <label for="user-friend">
+            <input class="buttons" type="checkbox" id="user-friend" name="user-friend" value="1" >User friendliness
+          </label>
+          <label for="visual">
+            <input class="buttons" type="checkbox" id="visual" name="visual" value="2">Visual design
+          </label>
+          <label for="interactive">
+            <input class="buttons" type="checkbox" id="interactive" name="interactive" value="3">Interactive features
+          </label>
+          <label for="media-int">
+            <input class="buttons" type="checkbox" id="media-int" name="media-int" value="4">Media integration
+          </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Do you have any additional feedback?
+          <textarea id="comments" name="comments" rows="3" cols="30"></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit">
+
+    </form> 
+  </body>
+</html>
